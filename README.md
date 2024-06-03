@@ -31,32 +31,32 @@ The dataset contains information on home sales, including details such as sale p
 
 ## Stages of the Analysis
 1. Setup Spark Environment:
-* Installed Java and Spark.
-* Set environment variables for Java and Spark.
-* Initialized Spark and created a Spark session.
+  * Installed Java and Spark.
+  * Set environment variables for Java and Spark.
+  * Initialized Spark and created a Spark session.
 
 2. Load Data:
-* Read the home sales data from an AWS S3 bucket into a DataFrame.
-* Created a temporary view of the DataFrame.
+  * Read the home sales data from an AWS S3 bucket into a DataFrame.
+  * Created a temporary view of the DataFrame.
 
 3. Perform SQL Queries:
-* ***request_1:*** Calculated the average price for a four-bedroom house sold per year.
-* ***request_2:*** Calculated the average price of a home for each year it was built, for homes with 3 bedrooms and 3 bathrooms.
-* ***request_3:*** Calculated the average price of a home for each year it was built, for homes with 3 bedrooms, 3 bathrooms, 2 floors, and at least 2,000 square feet.
+  * ***request_1:*** Calculated the average price for a four-bedroom house sold per year.
+  * ***request_2:*** Calculated the average price of a home for each year it was built, for homes with 3 bedrooms and 3 bathrooms.
+  * ***request_3:*** Calculated the average price of a home for each year it was built, for homes with 3 bedrooms, 3 bathrooms, 2 floors, and at least 2,000 square feet.
 
 4. Caching and Runtime Comparison:
-* Cached the temporary table and performed a query to calculate the average price of a home per "view" rating, for homes with an average price of at least $350,000.
-* Measured and compared the runtime of the query with and without caching.
+  * Cached the temporary table and performed a query to calculate the average price of a home per "view" rating, for homes with an average price of at least $350,000.
+  * Measured and compared the runtime of the query with and without caching.
 
 5. Partitioning Data:
-* Partitioned the home sales data by the date_built field and wrote it to Parquet format.
+  * Partitioned the home sales data by the date_built field and wrote it to Parquet format.
 
 6. Create Temporary Table from Parquet Data:
-* Read the partitioned Parquet data and created a temporary table.
-* Performed the same query as in Step 4 on the Parquet data and measured the runtime.
+  * Read the partitioned Parquet data and created a temporary table.
+  * Performed the same query as in Step 4 on the Parquet data and measured the runtime.
 
 7. Uncache Table:
-* Uncached the home_sales temporary table and verified that it was no longer cached.
+  * Uncached the home_sales temporary table and verified that it was no longer cached.
 
 ### Methods Used
 * ***SQL Queries:*** To extract and analyze data.
