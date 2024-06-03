@@ -59,7 +59,7 @@ The dataset contains information on home sales, including details such as sale p
 * Uncached the home_sales temporary table and verified that it was no longer cached.
 
 ### Methods Used
-***SQL Queries:*** To extract and analyze data.
-***Caching:*** To improve query performance by storing data in memory.
-***Partitioning:*** To organize data for efficient querying.
-***Parquet Format:*** To store data in a columnar format that is optimized for query performance.
+* ***SQL Queries:*** To extract and analyze data.
+* ***Caching:*** To improve query performance by storing data in memory.
+* ***Partitioning:*** To organize data for efficient querying.
+* ***Parquet Format:*** To store data in a columnar format that is optimized for query performance.
