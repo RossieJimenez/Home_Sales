@@ -10,14 +10,14 @@ The goal of this analysis is to explore and analyze home sales data using Apache
 ### Data Description
 The dataset contains information on home sales, including details such as sale price, number of bedrooms and bathrooms, square footage, and the date the home was built. Key variables include:
 
-***Date:*** The date when the home was sold.
-***Price:*** The sale price of the home.
-***Bedrooms:*** The number of bedrooms in the home.
-***Bathrooms:*** The number of bathrooms in the home.
-***Sqft_living:*** The square footage of the living space.
-***Floors:*** The number of floors in the home.
-***View:*** A rating of the home's view.
-***Date_built:*** The year the home was built.
+* ***Date:*** The date when the home was sold.
+* ***Price:*** The sale price of the home.
+* ***Bedrooms:*** The number of bedrooms in the home.
+* ***Bathrooms:*** The number of bathrooms in the home.
+* ***Sqft_living:*** The square footage of the living space.
+* ***Floors:*** The number of floors in the home.
+* ***View:*** A rating of the home's view.
+* ***Date_built:*** The year the home was built.
 
 ### Variable Information
 ***Date:*** The sale date of the home.
